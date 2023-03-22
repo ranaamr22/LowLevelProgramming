@@ -1,26 +1,21 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
- * followed by a new line
+ * print_alphabet - check the code for ALX School students.
+ *
+ * Return: Always 0.
  */
-void print_alphabet_x10(void)
+
+void print_alphabet(void)
 {
-	char ch;
-	int i;
+	char alp = 'a';
 
-	i = 0;
-
-	while (i < 10)
+	while (alp <= 'z')
 	{
-		ch = 'a';
-		while (ch <= 'z')
-		{
-			_putchar(ch);
-			ch++;
-		}
-		_putchar('\n');
-		i++;
-	}
-}
+		_putchar (alp);
+		alp++;
 
+	}
+	_putchar ('\n');
+
+}
