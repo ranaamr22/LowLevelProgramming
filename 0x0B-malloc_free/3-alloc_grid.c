@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * alloc_grid - creates a two dimensional array of ints
+ * **alloc_grid - creates a two dimensional array of ints
  * @width: width of the matrix
  * @height: height of the matrix
  *
@@ -34,14 +34,12 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	int *ptr = *arr;
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
 		{
-			*(ptr + i * width + j) = 0;
+			arr[i][j] = 0;
 		}
 	}
 	return (arr);
 }
-
