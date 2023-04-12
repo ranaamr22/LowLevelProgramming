@@ -23,3 +23,4 @@ char *_strdup(char *str)
 	while ((p[i] = str[i]) != '\0')
 		i++;
 	return (p);
+}
