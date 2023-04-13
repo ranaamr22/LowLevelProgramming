@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * *malloc_checked - returns pointer to the allocated memory,
- * checks the failure of malloc
- * @b: number of bytes needed to be allocated in the memory
+ * *malloc_checked - allocates memory using malloc
+ * @b: number of bytes to allocate
  *
- * Return: pointer to the allocated memory,(98)if fails
+ * Return: a pointer to the allocated memory
  */
+
 void *malloc_checked(unsigned int b)
 {
 	void *p;
