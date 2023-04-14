@@ -29,24 +29,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 	if (p == NULL)
 		return (NULL);
-	for (i < len1)
+	while (i < len1)
 	{
 		p[i] = s1[i];
-		i++
+		i++;
 	}
-	for ((j < n) && (n < len2))
+	while ((j < n) && (n < len2))
 	{
 		p[i] = s2[j];
 		i++;
 		j++;
 	}
-	for ((n >= len2) && (j < len2))
+	while ((n >= len2) && (j < len2))
 	{
 		p[i] = s2[j];
 		i++;
 		j++;
 	}
-	p[i] = '/0';
+	p[i] = '\0';
 
 	return (p);
 
