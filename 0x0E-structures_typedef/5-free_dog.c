@@ -2,23 +2,15 @@
 #include "dog.h"
 
 /**
- * free_dog - frees memory allocated for free_dog
- * @d: pointer to struct dog
+ * free_dog - frees memory allocated for a struct dog
+ * @d: struct dog to free
  */
 void free_dog(dog_t *d)
 {
-	if (d != NULL)
+	if (d)
 	{
-		free((*d).name);
-		free((*d).owner);
+		free(d->name);
+		free(d->owner);
 		free(d);
 	}
-}
-/**
- * main - to make a valid c declaration
- * Return: always 0 (success)
- */
-int main(void)
-{
-	return (0);
 }
