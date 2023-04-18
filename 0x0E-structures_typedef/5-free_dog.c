@@ -3,14 +3,10 @@
 
 /**
  * free_dog - frees memory allocated for a struct dog
- * @d: struct dog to free
+ * @d: pointer to a variable of type struct dog
  */
 void free_dog(dog_t *d)
 {
-	if (d)
-	{
-		free(d->name);
-		free(d->owner);
+	if (d != NULL)
 		free(d);
-	}
 }
